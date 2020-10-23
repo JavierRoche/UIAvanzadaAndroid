@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/linkImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fromXMLButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/link" />
+
+    <Button
+        android:id="@+id/fromXMLButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Desde XML"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fromCodebutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fromCodeButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Desde código"
+        app:layout_constraintEnd_toStartOf="@+id/propertyValuesHolder"
+        app:layout_constraintStart_toEndOf="@+id/fromXMLButton"
+        app:layout_constraintTop_toTopOf="@id/fromXMLButton" />
+
+    <Button
+        android:id="@+id/propertyValuesHolder"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fromCodebutton"
+        app:layout_constraintTop_toTopOf="@id/fromXMLButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

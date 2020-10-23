@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenidos/as al playground del módulo de UI Avanzada"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customViewsTitle"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Custom Views"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainTitle" />
+
+    <Button
+        android:id="@+id/ratingStars"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/rating_stars"
+        app:layout_constraintEnd_toStartOf="@+id/canvasPizza"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customViewsTitle" />
+
+    <Button
+        android:id="@+id/canvasPizza"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/canvas_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ratingStars"
+        app:layout_constraintTop_toBottomOf="@id/customViewsTitle" />
+
+    <Button
+        android:id="@+id/drawingViewWithCircle"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/drawing_view"
+        app:layout_constraintEnd_toStartOf="@+id/drawingViewWithPaths"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/canvasPizza" />
+
+    <Button
+        android:id="@+id/drawingViewWithPaths"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/drawing_view_with_paths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/drawingViewWithCircle"
+        app:layout_constraintTop_toBottomOf="@id/canvasPizza" />
+
+    <TextView
+        android:id="@+id/animationTitle"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:text="@string/animation_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drawingViewWithPaths" />
+
+    <Button
+        android:id="@+id/valueAnimationsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/value_animators"
+        app:layout_constraintEnd_toStartOf="@+id/canvasPizza"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animationTitle" />
+
+    <Button
+        android:id="@+id/sequenceAnimationsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/sequence_animations"
+        app:layout_constraintStart_toEndOf="@id/valueAnimationsButton"
+        app:layout_constraintTop_toBottomOf="@id/animationTitle" />
+
+
+    <Button
+        android:id="@+id/drawableAnimationsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/drawable_animations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueAnimationsButton" />
+
+    <Button
+        android:id="@+id/layoutTransitionsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_transitions"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/activitiesTransitionsButton"
+        app:layout_constraintTop_toBottomOf="@id/drawableAnimationsButton" />
+
+    <Button
+        android:id="@+id/activitiesTransitionsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_transitions"
+        app:layout_constraintStart_toEndOf="@id/layoutTransitionsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drawableAnimationsButton" />
+
+    <TextView
+        android:id="@+id/motionLayoutTitle"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="MotionLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activitiesTransitionsButton"/>
+
+    <Button
+        android:id="@+id/motionLayoutButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="MotionLayout"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/motionLayoutTitle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

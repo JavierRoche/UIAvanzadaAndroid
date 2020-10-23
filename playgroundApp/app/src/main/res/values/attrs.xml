@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Definimos atributos por defecto a los RatingViews -->
+    <declare-styleable name="RatingView">
+        <attr name="numStars" format="integer"/>
+        <attr name="rating" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="Pizza">
+        <attr name="color" format="color"/>
+        <attr name="stroke_width" format="float"/>
+        <attr name="num_wedges" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/explodeCode"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Explode code"
+        app:layout_constraintEnd_toStartOf="@+id/explodeXML"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/explodeXML"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Explode XML"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/explodeCode"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/slideCode"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Slide code"
+        app:layout_constraintEnd_toStartOf="@+id/slideXML"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/explodeCode" />
+
+    <Button
+        android:id="@+id/slideXML"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Slide XML"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/slideCode"
+        app:layout_constraintTop_toTopOf="@id/slideCode" />
+
+    <Button
+        android:id="@+id/fadeCode"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Fade code"
+        app:layout_constraintEnd_toStartOf="@+id/fadeXML"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slideCode" />
+
+    <Button
+        android:id="@+id/fadeXML"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Fade XML"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fadeCode"
+        app:layout_constraintTop_toTopOf="@id/fadeCode"/>
+
+    <Button
+        android:id="@+id/sharedElement"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="Shared element"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fadeXML"/>
+
+    <ImageView
+        android:id="@+id/linkSharedImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@id/linkSharedDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sharedElement"
+        app:srcCompat="@drawable/link"
+        android:transitionName="linkImage"/>
+
+    <TextView
+        android:id="@+id/linkSharedDescription"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:transitionName="linkDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

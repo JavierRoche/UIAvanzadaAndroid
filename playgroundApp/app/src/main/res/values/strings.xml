@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AdvancedUIPlayground</string>
+    <string name="canvas_pizza">Canvas pizza</string>
+    <string name="rating_stars">Estrellas</string>
+    <string name="drawing_view">A dibujar!</string>
+    <string name="drawing_view_with_paths">A dibujar paths!</string>
+    <string name="animation_title">Animaciones</string>
+    <string name="value_animators">ValueAnimator</string>
+    <string name="sequence_animations">Secuencias</string>
+    <string name="drawable_animations">Drawables</string>
+    <string name="layout_transitions">Transic. Layouts</string>
+    <string name="activity_transitions">Transic. Activities</string>
+    <string name="link_title">Link</string>
+    <string name="link_description">Link es el nombre de los distintos protagonistas de la serie de videojuegos The Legend of Zelda de Nintendo, creada por Shigeru Miyamoto en 1986, una de las franquicias más exitosas de la empresa (hasta 2007, ha vendido más de 47 millones de copias a nivel mundial)</string>
+</resources>
